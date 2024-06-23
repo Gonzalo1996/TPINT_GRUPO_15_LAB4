@@ -11,7 +11,7 @@
  <h2>Proyecto final Laboratorio 4 UTN FRGP</h2>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
-		<form method="post" action="${pageContext.request.contextPath}/login.jsp">
+		<form method="post" action="${pageContext.request.contextPath}">
 			<h1>Crear una cuenta</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -19,15 +19,15 @@
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
 			<!--<span>or use your email for registration</span>-->
-			<input type="text" name="txtName" placeholder="Name" />
+			<input type="text" name="txtName" placeholder="Nombre" />
 			<input type="email" name="txtEmail" placeholder="Email" />
-			<input type="password" name="txtPass" placeholder="Password" />
+			<input type="password" name="txtPass" placeholder="Contraseña" />
 			<input class="button" type="submit" name="btnRegister" value="Registrarse"/>
 			<!--  <button>Registrarse</button>-->
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form method="post" action="${pageContext.request.contextPath}/login.jsp">
+		<form method="post" action="admin.html"> <!-- action="${pageContext.request.contextPath}/login.jsp" -->
 			<h1>Ingresar</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -35,8 +35,8 @@
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
 			<!--  <span>or use your account</span> -->
-			<input type="email" name="txtName" placeholder="Email" />
-			<input type="password" name="txtPass" placeholder="Password" />
+			<input type="email" name="txtEmail" placeholder="Email" />
+			<input type="password" name="txtPass" placeholder="Contraseña" />
 			<a href="#">¿Olvidaste tu contraseña?</a>
 			<input class="button" type="submit" name="btnLogin" value="Ingresar"/>
 			<!--<button>Ingresar</button>-->
@@ -47,7 +47,7 @@
 			<div class="overlay-panel overlay-left">
 				<h1>Bienvenido!</h1>
 				<p>Inicie sesión con su información personal y navegue por la plataforma</p>
-				<button class="button ghost" id="signIn">Sign In</button>
+				<button class="button ghost" id="signIn">Iniciar sesión</button>
 			</div>
 			<div class="overlay-panel overlay-right">
 				<h1>Registrate!</h1>

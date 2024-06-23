@@ -18,7 +18,7 @@
                 <button class="btn btn--primary">Boton Para Usar</button>
             </div>
             <div class="toolbar__right">
-              <a href="#" class="btn btn--primary logout">Cerrar Sesion</a>
+              <a href="${pageContext.request.contextPath}" class="btn btn--primary logout">Cerrar Sesion</a>
             </div>
         </div>
     </header>
