@@ -4,8 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/listPacientes.css">
-<title>Listado Medicos</title>
+<title>Listado Pacientes</title>
 </head>
 <body>
 <div class="admin">
@@ -40,7 +39,7 @@
 <!--             <li class="menu__divider"></li>             -->
             <li class="menu__title">PACIENTES</li>
             <li class="menu__item">
-                <a class="menu__link" href="listPacientes.html">Listado</a>
+                <a class="menu__link" href="#">Listado</a>
             </li>
             <li class="menu__item">
                 <a class="menu__link" href="#">Alta</a>
