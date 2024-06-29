@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/listPacientes.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/listadoPaciente.css">
 <title>Modificacion Paciente</title>
 </head>
 <body>
@@ -43,13 +44,13 @@
                 <a class="menu__link" href="listPacientes.html">Listado</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Alta</a>
+                <a class="menu__link" href="altaPaciente.html">Alta</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Modificar</a>
+                <a class="menu__link" href="modificarPaciente.html">Modificar</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Dar Baja</a>
+                <a class="menu__link" href="eliminarPaciente.html">Dar Baja</a>
             </li>
 <!--             <li class="menu__divider"></li> -->
 
@@ -69,7 +70,7 @@
         </ul>
     </nav>
     <main class="admin__main">
-
+		<h2>Pantalla Modificacion Paciente Proximamente</h2>
     </main>
     <footer class="admin__footer">
         <span>&copy; 2018 Company Inc.</span>

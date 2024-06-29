@@ -44,13 +44,13 @@
                 <a class="menu__link" href="listPacientes.html">Listado</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Alta</a>
+                <a class="menu__link" href="altaPaciente.html">Alta</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Modificar</a>
+                <a class="menu__link" href="modificarPaciente.html">Modificar</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Dar Baja</a>
+                <a class="menu__link" href="eliminarPaciente.html">Dar Baja</a>
             </li>
 <!--             <li class="menu__divider"></li> -->
 
