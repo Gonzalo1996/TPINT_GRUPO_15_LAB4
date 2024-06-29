@@ -26,10 +26,10 @@
         <ul class="menu">
             <li class="menu__title">MEDICOS</li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Listado</a>
+                <a class="menu__link" href="ListaMedicos.jsp">Listado</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Alta</a>
+                <a class="menu__link" href="AltaMedicos.jsp">Alta</a>
             </li>
             <li class="menu__item">
                 <a class="menu__link" href="#">Modificar</a>
