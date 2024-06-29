@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/listPacientes.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/listadoPaciente.css">
-<title>Listado Pacientes</title>
+<title>Alta Paciente</title>
 </head>
 <body>
 <div class="admin">
@@ -41,7 +41,7 @@
 <!--             <li class="menu__divider"></li>             -->
             <li class="menu__title">PACIENTES</li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Listado</a>
+                <a class="menu__link" href="listPacientes.html">Listado</a>
             </li>
             <li class="menu__item">
                 <a class="menu__link" href="#">Alta</a>
@@ -71,7 +71,7 @@
     </nav>
     <main class="admin__main">
     
-        <div class="container">
+      <div class="container">
         <header>Alta Paciente</header>
         <form action="#">
             <div class="form first">
@@ -238,130 +238,7 @@
             -->
         </form>
     </div>
-    <!-- 
-        <div class="dashboard">
-            <div class="dashboard__item">
-                <div class="card">
-                    <div class="card__header">
-                        Players
-                    </div>
-                    <div class="card__content">
-                        <div class="card__item">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ab libero consectetur et numquam a id. Dignissimos nesciunt aperiam ut minima itaque repudiandae architecto praesentium autem. Porro ad labore fugiat?
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard__item dashboard__item--col">
-                <div class="card">
-                    <div class="card__header">
-                        Memory
-                    </div>
-                    <div class="card__content">
-                        <div class="card__item">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard__item dashboard__item--col">
-                <div class="card">
-                    <div class="card__header">
-                        Disk usage
-                    </div>
-                    <div class="card__content">
-                        <div class="card__item">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard__item dashboard__item--full">
-                <div class="card">
-                    <div class="card__header">
-                        Card full width
-                    </div>
-                    <div class="card__content">
-                        <div class="card__item">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolore laudantium est, vel illo labore nostrum cupiditate perspiciatis, doloremque sit enim sequi, quasi cumque dolorum voluptate! Aliquam corrupti laboriosam nostrum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate porro dolores optio dicta tempora quas, culpa itaque, unde recusandae tempore. Voluptas quia perferendis est veritatis nobis, iusto voluptate dolor?
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard__item dashboard__item--col">
-                <div class="card">
-                    <div class="card__header">
-                        Card
-                    </div>
-                    <div class="card__content">
-                        <div class="card__item">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard__item dashboard__item--col">
-                <div class="card">
-                    <div class="card__header">
-                        Card
-                    </div>
-                    <div class="card__content">
-                        <div class="card__item">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard__item dashboard__item--col">
-                <div class="card">
-                    <div class="card__header">
-                        Card
-                    </div>
-                    <div class="card__content">
-                        <div class="card__item">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard__item dashboard__item--col">
-                <div class="card">
-                    <div class="card__header">
-                        Card
-                    </div>
-                    <div class="card__content">
-                        <div class="card__item">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard__item dashboard__item--full">
-                <div class="card">
-                    <div class="card__header">
-                        Card full width
-                    </div>
-                    <div class="card__content">
-                        <div class="card__item">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolore laudantium est, vel illo labore nostrum cupiditate perspiciatis, doloremque sit enim sequi, quasi cumque dolorum voluptate! Aliquam corrupti laboriosam nostrum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate porro dolores optio dicta tempora quas, culpa itaque, unde recusandae tempore. Voluptas quia perferendis est veritatis nobis, iusto voluptate dolor?
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard__item dashboard__item--full">
-                <div class="card">
-                    <div class="card__header">
-                        Card full width
-                    </div>
-                    <div class="card__content">
-                        <div class="card__item">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolore laudantium est, vel illo labore nostrum cupiditate perspiciatis, doloremque sit enim sequi, quasi cumque dolorum voluptate! Aliquam corrupti laboriosam nostrum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate porro dolores optio dicta tempora quas, culpa itaque, unde recusandae tempore. Voluptas quia perferendis est veritatis nobis, iusto voluptate dolor?
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-     -->
+
     </main>
     <footer class="admin__footer">
         <span>&copy; 2018 Company Inc.</span>
