@@ -70,7 +70,7 @@
         </ul>
     </nav>
     <main class="admin__main">
-		<h2>Pantalla Eliminacion Paciente Proximamente</h2>
+		<h2>Pantalla Eliminacion Paciente Proximamente...</h2>
     </main>
     <footer class="admin__footer">
         <span>&copy; 2018 Company Inc.</span>
