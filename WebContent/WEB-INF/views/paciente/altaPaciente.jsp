@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/listadoPaciente.css">
 <title>Alta Paciente</title>
 </head>
-<body>
+<body class="hm-gradient">
 <div class="admin">
     <header class="admin__header">
         <a href="#" class="logo">
