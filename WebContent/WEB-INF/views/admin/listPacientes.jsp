@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/listPacientes.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/listadoPaciente.css">
 <title>Listado Medicos</title>
@@ -27,16 +28,16 @@
         <ul class="menu">
             <li class="menu__title">MEDICOS</li>
             <li class="menu__item">
-                <a class="menu__link" href="ListaMedicos.jsp">Listado</a>
+                <a class="menu__link" href="ListaMedicos.html">Listado</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="AltaMedicos.jsp">Alta</a>
+                <a class="menu__link" href="AltaMedicos.html">Alta</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Modificar</a>
+                <a class="menu__link" href="ModificarMedico.html">Modificar</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Dar Baja</a>
+                <a class="menu__link" href="BajaMedicos.html">Dar Baja</a>
             </li>
 <!--             <li class="menu__divider"></li>             -->
             <li class="menu__title">PACIENTES</li>
@@ -56,16 +57,19 @@
 
             <li class="menu__title">TURNOS</li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Listado</a>
+                <a class="menu__link" href="ListaTurnos.html">Listado</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Asignar</a> <!-- is-active -->
+                <a class="menu__link" href="AsignarTurno.html">Asignar</a>
+            <li class="menu__item">
+                <a class="menu__link" href="ModificarTurno.html">Modificar</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Modificar</a>
+                <a class="menu__link" href="BajaTurnos.html">Eliminar</a>
             </li>
+            <li class="menu__title">INFORMES</li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Eliminar</a>
+                <a class="menu__link" href="Informes.html">Ver informes</a>
             </li>
         </ul>
     </nav>

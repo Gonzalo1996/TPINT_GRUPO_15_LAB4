@@ -2,9 +2,12 @@ package frgp.utn.edu.ar.negocioImp;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import frgp.utn.edu.ar.daoImp.DaoMedico;
 import frgp.utn.edu.ar.entidad.Medico;
 
+@Service
 public class medicoNegocio {
 	
     private DaoMedico daoMedico;

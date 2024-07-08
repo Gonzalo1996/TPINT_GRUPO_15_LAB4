@@ -1,12 +1,16 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baja de médico</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/listPacientes.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/listadoPaciente.css">
-<title>Eliminacion Pacientes</title>
+
 </head>
 <body>
 <div class="admin">
@@ -19,7 +23,7 @@
                 <button class="btn btn--primary">Boton Para Usar</button>
             </div>
             <div class="toolbar__right">
-              <a href="${pageContext.request.contextPath}" class="btn btn--primary logout">Cerrar Sesion</a>
+                <a href="#" class="btn btn--primary logout">Cerrar Sesion</a>
             </div>
         </div>
     </header>
@@ -53,16 +57,16 @@
             </li>
             <li class="menu__title">TURNOS</li>
             <li class="menu__item">
-                <a class="menu__link" href="ListaTurnos.html">Listado</a>
+                <a class="menu__link" href="#">Listado</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="AsignarTurno.html">Asignar</a>
+                <a class="menu__link" href="#">Asignar</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="ModificarTurno.html">Modificar</a>
+                <a class="menu__link" href="#">Modificar</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="BajaTurnos.html">Eliminar</a>
+                <a class="menu__link" href="#">Eliminar</a>
             </li>
             <li class="menu__title">INFORMES</li>
             <li class="menu__item">
@@ -70,13 +74,29 @@
             </li>
         </ul>
     </nav>
-    <main class="admin__main">
-		<h2>Pantalla Eliminacion Paciente Proximamente...</h2>
+        <main class="admin__main">
+        <div class="container">
+            <div class="starter-template text-center">
+                <h1>Visualización de informes</h1>
+                <p class="lead">Seleccione el informe que desea visualizar:</p>
+                <form>
+                    <div class="mb-3">
+                        <select class="form-select">
+                            <option selected>Seleccione un informe...</option>
+                            <option value="1">Informe 1</option>
+                            <option value="2">Informe 2</option>
+                            <option value="3">Informe 3</option>
+                            <option value="4">Informe 4</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Visualizar</button>
+                </form>
+            </div>
+        </div>
     </main>
-    <footer class="admin__footer">
-        <span>&copy; 2018 Company Inc.</span>
-        <span><a href="#1" class="help">Ask for help</a></span>
-    </footer>
+    
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

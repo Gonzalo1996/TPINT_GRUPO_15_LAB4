@@ -27,18 +27,17 @@
         <ul class="menu">
             <li class="menu__title">MEDICOS</li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Listado</a>
+                <a class="menu__link" href="ListaMedicos.html">Listado</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Alta</a>
+                <a class="menu__link" href="AltaMedicos.html">Alta</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Modificar</a>
+                <a class="menu__link" href="ModificarMedico.html">Modificar</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Dar Baja</a>
+                <a class="menu__link" href="BajaMedicos.html">Dar Baja</a>
             </li>
-<!--             <li class="menu__divider"></li>             -->
             <li class="menu__title">PACIENTES</li>
             <li class="menu__item">
                 <a class="menu__link" href="listPacientes.html">Listado</a>
@@ -52,20 +51,22 @@
             <li class="menu__item">
                 <a class="menu__link" href="eliminarPaciente.html">Dar Baja</a>
             </li>
-<!--             <li class="menu__divider"></li> -->
-
             <li class="menu__title">TURNOS</li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Listado</a>
+                <a class="menu__link" href="ListaTurnos.html">Listado</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Asignar</a> <!-- is-active -->
+                <a class="menu__link" href="AsignarTurno.html">Asignar</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Modificar</a>
+                <a class="menu__link" href="ModificarTurno.html">Modificar</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Eliminar</a>
+                <a class="menu__link" href="BajaTurnos.html">Eliminar</a>
+            </li>
+            <li class="menu__title">INFORMES</li>
+            <li class="menu__item">
+                <a class="menu__link" href="Informes.html">Ver informes</a>
             </li>
         </ul>
     </nav>
@@ -123,12 +124,22 @@
                             <input type="text" placeholder="Ingresa tu telefono" required>
                         </div>
                         <div class="input-field">
-                            <label>Provincia</label>
-                            <input type="text" placeholder="Ingresa tu provincia" required>
+                            <label for="inputProvincia" class="form-label">Provincia:</label>
+		                    <select id="inputProvincia" class="form-select">
+		                        <option selected>Seleccionar provincia...</option>
+		                        <option value="1">Provincia 1</option>
+		                        <option value="2">Provincia 2</option>
+		                        <option value="3">Provincia 3</option>
+		                    </select>
                         </div>
                         <div class="input-field">
-                            <label>Localidad</label>
-                            <input type="text" placeholder="Ingresa tu localidad" required>
+                            <label for="inputLocalidad" class="form-label">Localidad:</label>
+		                    <select id="inputLocalidad" class="form-select">
+		                        <option selected>Seleccionar localidad...</option>
+		                        <option value="1">Localidad 1</option>
+		                        <option value="2">Localidad 2</option>
+		                        <option value="3">Localidad 3</option>
+		                    </select>
                         </div>
 						<div class="input-field">
                             <label>Dirección</label>

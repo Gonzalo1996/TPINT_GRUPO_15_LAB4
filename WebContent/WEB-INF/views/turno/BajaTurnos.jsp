@@ -1,12 +1,16 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baja de turnos</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/listPacientes.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/listadoPaciente.css">
-<title>Eliminacion Pacientes</title>
+
 </head>
 <body>
 <div class="admin">
@@ -19,7 +23,7 @@
                 <button class="btn btn--primary">Boton Para Usar</button>
             </div>
             <div class="toolbar__right">
-              <a href="${pageContext.request.contextPath}" class="btn btn--primary logout">Cerrar Sesion</a>
+                <a href="#" class="btn btn--primary logout">Cerrar Sesion</a>
             </div>
         </div>
     </header>
@@ -71,12 +75,25 @@
         </ul>
     </nav>
     <main class="admin__main">
-		<h2>Pantalla Eliminacion Paciente Proximamente...</h2>
+        <div class="container">
+            <div class="starter-template">
+                <h1 class="text-center">Baja de Turnos</h1>
+                <p class="text-center">
+                    Ingrese el ID del turno a dar de baja.
+                </p>
+            </div>
+
+            <form class="row g-3 justify-content-center">
+                <div class="col-md-6">
+                    <label for="inputLegajo" class="form-label">ID:</label>
+                    <input type="text" class="form-control" id="inputLegajo" placeholder="Ingrese el ID del turno...">
+                    <button type="submit" class="btn btn-danger">Dar de baja</button>
+                </div>
+            </form>
+        </div>
     </main>
-    <footer class="admin__footer">
-        <span>&copy; 2018 Company Inc.</span>
-        <span><a href="#1" class="help">Ask for help</a></span>
-    </footer>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
