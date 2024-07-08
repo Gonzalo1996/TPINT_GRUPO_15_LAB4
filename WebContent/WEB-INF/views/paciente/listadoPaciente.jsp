@@ -4,8 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/listPacientes.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/listadoPaciente.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/listado.css">
+
 <title>Listado Pacientes</title>
 </head>
 <body>
@@ -71,131 +73,128 @@
         </ul>
     </nav>
     <main class="admin__main">
-    	<h2>Pantalla Listado Pacientes Proximamente</h2>
-    <!-- 
-        <div class="dashboard">
-            <div class="dashboard__item">
-                <div class="card">
-                    <div class="card__header">
-                        Players
-                    </div>
-                    <div class="card__content">
-                        <div class="card__item">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ab libero consectetur et numquam a id. Dignissimos nesciunt aperiam ut minima itaque repudiandae architecto praesentium autem. Porro ad labore fugiat?
+             <div class="card">
+                <div class="card-body">
+                    <!-- Grid row -->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-12">
+                            <h2 class="py-3 text-center font-bold font-up blue-text">Table with pagination</h2>
                         </div>
+                        <!-- Grid column -->
                     </div>
+                    <!-- Grid row -->
+                    <!--Table-->
+                    <table class="table table-hover table-responsive mb-0">
+                        <!--Table head-->
+                        <thead>
+                            <tr>
+                                <th scope="row">#</th>
+                                <th class="th-lg"><a>First Name</a></th>
+                                <th class="th-lg"><a href="">Last Name</a></th>
+                                <th class="th-lg"><a href="">Username</a></th>
+                                <th class="th-lg"><a href="">Username</a></th>
+                                <th class="th-lg"><a href="">Username</a></th>
+                                <th class="th-lg"><a href="">Username</a></th>
+                            </tr>
+                        </thead>
+                        <!--Table head-->
+                        <!--Table body-->
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Paul</td>
+                                <td>Topolski</td>
+                                <td>@P_Topolski</td>
+                                <td>Paul</td>
+                                <td>Topolski</td>
+                                <td>@P_Topolski</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                        <!--Table body-->
+                    </table>
+                    <!--Bottom Table UI-->
+                    <div class="d-flex justify-content-center">
+                        <!--Pagination -->
+                        <nav class="my-4 pt-2">
+                            <ul class="pagination pagination-circle pg-blue mb-0">
+                                <!--First-->
+                                <li class="page-item disabled clearfix d-none d-md-block"><a class="page-link">First</a></li>
+                                <!--Arrow left-->
+                                <li class="page-item disabled">
+                                    <a class="page-link" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                </li>
+                                <!--Numbers-->
+                                <li class="page-item active"><a class="page-link">1</a></li>
+                                <li class="page-item"><a class="page-link">2</a></li>
+                                <li class="page-item"><a class="page-link">3</a></li>
+                                <li class="page-item"><a class="page-link">4</a></li>
+                                <li class="page-item"><a class="page-link">5</a></li>
+                                <!--Arrow right-->
+                                <li class="page-item">
+                                    <a class="page-link" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                </li>
+                                <!--First-->
+                                <li class="page-item clearfix d-none d-md-block"><a class="page-link">Last</a></li>
+                            </ul>
+                        </nav>
+                        <!--/Pagination -->
+                    </div>
+                    <!--Bottom Table UI-->
                 </div>
             </div>
-            <div class="dashboard__item dashboard__item--col">
-                <div class="card">
-                    <div class="card__header">
-                        Memory
-                    </div>
-                    <div class="card__content">
-                        <div class="card__item">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum.
-                        </div>
-                    </div>
-                </div>
+          
+            <hr class="my-4">
+          
+            <div class="text-center darken-grey-text mb-4">
+                <h3 class="font-bold mb-3">Here you can find more Tables:</h3>
+                <a class="btn btn-danger" href="https://mdbootstrap.com/content/tables/" target="_blank">Bootstrap Tables</a>
             </div>
-            <div class="dashboard__item dashboard__item--col">
-                <div class="card">
-                    <div class="card__header">
-                        Disk usage
-                    </div>
-                    <div class="card__content">
-                        <div class="card__item">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard__item dashboard__item--full">
-                <div class="card">
-                    <div class="card__header">
-                        Card full width
-                    </div>
-                    <div class="card__content">
-                        <div class="card__item">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolore laudantium est, vel illo labore nostrum cupiditate perspiciatis, doloremque sit enim sequi, quasi cumque dolorum voluptate! Aliquam corrupti laboriosam nostrum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate porro dolores optio dicta tempora quas, culpa itaque, unde recusandae tempore. Voluptas quia perferendis est veritatis nobis, iusto voluptate dolor?
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard__item dashboard__item--col">
-                <div class="card">
-                    <div class="card__header">
-                        Card
-                    </div>
-                    <div class="card__content">
-                        <div class="card__item">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard__item dashboard__item--col">
-                <div class="card">
-                    <div class="card__header">
-                        Card
-                    </div>
-                    <div class="card__content">
-                        <div class="card__item">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard__item dashboard__item--col">
-                <div class="card">
-                    <div class="card__header">
-                        Card
-                    </div>
-                    <div class="card__content">
-                        <div class="card__item">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard__item dashboard__item--col">
-                <div class="card">
-                    <div class="card__header">
-                        Card
-                    </div>
-                    <div class="card__content">
-                        <div class="card__item">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard__item dashboard__item--full">
-                <div class="card">
-                    <div class="card__header">
-                        Card full width
-                    </div>
-                    <div class="card__content">
-                        <div class="card__item">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolore laudantium est, vel illo labore nostrum cupiditate perspiciatis, doloremque sit enim sequi, quasi cumque dolorum voluptate! Aliquam corrupti laboriosam nostrum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate porro dolores optio dicta tempora quas, culpa itaque, unde recusandae tempore. Voluptas quia perferendis est veritatis nobis, iusto voluptate dolor?
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard__item dashboard__item--full">
-                <div class="card">
-                    <div class="card__header">
-                        Card full width
-                    </div>
-                    <div class="card__content">
-                        <div class="card__item">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolore laudantium est, vel illo labore nostrum cupiditate perspiciatis, doloremque sit enim sequi, quasi cumque dolorum voluptate! Aliquam corrupti laboriosam nostrum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate porro dolores optio dicta tempora quas, culpa itaque, unde recusandae tempore. Voluptas quia perferendis est veritatis nobis, iusto voluptate dolor?
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
-     -->
+        <!--MDB Tables-->
     </main>
     <footer class="admin__footer">
         <span>&copy; 2018 Company Inc.</span>
