@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,7 +46,7 @@
             </li>
             <li class="menu__title">PACIENTES</li>
             <li class="menu__item">
-                <a class="menu__link" href="listPacientes.html">Listado</a>
+                <a class="menu__link" href="listadoPaciente.html">Listado</a>
             </li>
             <li class="menu__item">
                 <a class="menu__link" href="altaPaciente.html">Alta</a>
@@ -101,16 +102,17 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <c:forEach var="paciente" items="${pacientes}">
                             <tr>
-                                <td>Juan</td>
-                                <td>Pérez</td>
-                                <td>412341234</td>
-                                <td>1990-11-11</td>
-                                <td>juan@test.com</td>
-                                <td>41414242</td>
-                                <td>San Fernando</td>
-                                <td>Buenos Aires</td>
-                                <td>Perón 1990</td>
+                                <td>${paciente.nombre}</td>
+                                <td>${paciente.apellido}</td>
+                                <td>${paciente.dni}</td>
+                                <td>${paciente.fechaNacimiento}</td>
+                                <td>${paciente.correo}</td>
+                                <td>${paciente.telefono}</td>
+                                <td>${paciente.localidad}</td>
+                                <td>${paciente.provincia}</td>
+                                <td>${paciente.direccion}</td>
                                 <td>
                                     <div class="d-flex">
                                         <button class="btn btn-warning btn-sm me-2">Modificar</button>
@@ -118,6 +120,7 @@
                                     </div>
                                 </td>
                             </tr>
+                        </c:forEach>
                     </tbody>
                 </table>
             </div>

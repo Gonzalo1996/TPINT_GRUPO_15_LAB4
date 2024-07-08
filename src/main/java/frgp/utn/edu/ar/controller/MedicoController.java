@@ -13,6 +13,9 @@ import frgp.utn.edu.ar.negocioImp.medicoNegocio;
 @Controller
 public class MedicoController {
 	
+	
+	@Autowired private medicoNegocio medicoNegocio;
+	
 	@RequestMapping("AltaMedicos.html")
 	public ModelAndView viewAltamedicos() {
 		
@@ -24,11 +27,10 @@ public class MedicoController {
 	}
 	
 	@RequestMapping("ListaMedicos.html")
-    public ModelAndView viewListaMedicos() {
-		//medicoNegocio meNeg = new medicoNegocio();
-        //List<Medico> medicos = meNeg.listMedicos();
-        //model.addAttribute("medicos", medicos);
+	public ModelAndView viewListaMedicos() {
         ModelAndView mv = new ModelAndView();
+        List<Medico> listaMedicos = medicoNegocio.listMedicos();
+        mv.addObject("medicos", listaMedicos);
         mv.setViewName("medico/ListaMedicos");
         return mv;
     }

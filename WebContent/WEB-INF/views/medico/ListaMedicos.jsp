@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -91,7 +92,6 @@
                             <th>Legajo</th>
                             <th>Nombre</th>
                             <th>Apellido</th>
-                            <th>DNI</th>
                             <th>Especialidad</th>
                             <th>Teléfono</th>
                             <th>Correo</th>
@@ -103,18 +103,18 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <c:forEach var="medico" items="${medicos}">
                             <tr>
-                                <td>123</td>
-                                <td>Juan</td>
-                                <td>Pérez</td>
-                                <td>412341234</td>
-                                <td>Cardiólogo</td>
-                                <td>41414242</td>
-                                <td>juan@test.com</td>
-                                <td>San Fernando</td>
-                                <td>juan91</td>
-                                <td>15:00-23:00</td>
-                                <td>Lunves, Viernes</td>
+                                <td>${medico.legajo}</td>
+                                <td>${medico.nombre}</td>
+                                <td>${medico.apellido}</td>
+                                <td>${medico.especialidad.nombre}</td>
+                                <td>${medico.telefono}</td>
+                                <td>${medico.correo}</td>
+                                <td>${medico.localidad}</td>
+                                <td>${medico.usuario.usuario}</td>
+                                <td>${medico.horariosAtencion}</td>
+                                <td>${medico.diasAtencion}</td>
                                 <td>
                                     <div class="d-flex">
                                         <button class="btn btn-warning btn-sm me-2">Modificar</button>
@@ -122,6 +122,7 @@
                                     </div>
                                 </td>
                             </tr>
+                        </c:forEach>
                     </tbody>
                 </table>
             </div>

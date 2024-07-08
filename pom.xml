@@ -196,16 +196,6 @@
 		<artifactId>tomcat-websocket-api</artifactId>
 		<version>8.5.53</version>
 	</dependency>
-	<dependency>
-    <groupId>javax.servlet</groupId>
-    <artifactId>jstl</artifactId>
-    <version>1.2</version>
-</dependency>
-<dependency>
-    <groupId>taglibs</groupId>
-    <artifactId>standard</artifactId>
-    <version>1.1.2</version>
-</dependency>
 	</dependencies>
   <build>
     <plugins>
