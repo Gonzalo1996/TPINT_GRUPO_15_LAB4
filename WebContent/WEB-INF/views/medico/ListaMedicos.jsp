@@ -102,20 +102,19 @@
                             <th>Acciones</th>
                         </tr>
                     </thead>
-                    <!-- <tbody>
-                        <c:forEach var="medico" items="${medicos}">
+                    <tbody>
                             <tr>
-                                <td>${medico.legajo}</td>
-                                <td>${medico.nombre}</td>
-                                <td>${medico.apellido}</td>
-                                <td>${medico.dni}</td>
-                                <td>${medico.especialidad}</td>
-                                <td>${medico.telefono}</td>
-                                <td>${medico.email}</td>
-                                <td>${medico.localidad}</td>
-                                <td>${medico.usuario}</td>
-                                <td>${medico.horariosAtencion}</td>
-                                <td>${medico.diasAtencion}</td>
+                                <td>123</td>
+                                <td>Juan</td>
+                                <td>Pérez</td>
+                                <td>412341234</td>
+                                <td>Cardiólogo</td>
+                                <td>41414242</td>
+                                <td>juan@test.com</td>
+                                <td>San Fernando</td>
+                                <td>juan91</td>
+                                <td>15:00-23:00</td>
+                                <td>Lunves, Viernes</td>
                                 <td>
                                     <div class="d-flex">
                                         <button class="btn btn-warning btn-sm me-2">Modificar</button>
@@ -123,9 +122,7 @@
                                     </div>
                                 </td>
                             </tr>
-                        </c:forEach>
                     </tbody>
-                     -->
                 </table>
             </div>
         </div>

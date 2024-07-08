@@ -1,14 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/listPacientes.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/listado.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Pacientes</title>
 
-<title>Listado Pacientes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/listPacientes.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/listadoPaciente.css">
 </head>
 <body>
 <div class="admin">
@@ -18,10 +21,10 @@
         </a>
         <div class="toolbar">
             <div class="toolbar__left">
-                <button class="btn btn--primary">Boton Para Usar</button>
+                <button class="btn btn--primary">Botón Para Usar</button>
             </div>
             <div class="toolbar__right">
-              <a href="${pageContext.request.contextPath}" class="btn btn--primary logout">Cerrar Sesion</a>
+                <a href="${pageContext.request.contextPath}" class="btn btn--primary logout">Cerrar Sesión</a>
             </div>
         </div>
     </header>
@@ -73,134 +76,72 @@
         </ul>
     </nav>
     <main class="admin__main">
-             <div class="card">
-                <div class="card-body">
-                    <!-- Grid row -->
-                    <div class="row">
-                        <!-- Grid column -->
-                        <div class="col-md-12">
-                            <h2 class="py-3 text-center font-bold font-up blue-text">Table with pagination</h2>
-                        </div>
-                        <!-- Grid column -->
-                    </div>
-                    <!-- Grid row -->
-                    <!--Table-->
-                    <table class="table table-hover table-responsive mb-0">
-                        <!--Table head-->
-                        <thead>
-                            <tr>
-                                <th scope="row">#</th>
-                                <th class="th-lg"><a>First Name</a></th>
-                                <th class="th-lg"><a href="">Last Name</a></th>
-                                <th class="th-lg"><a href="">Username</a></th>
-                                <th class="th-lg"><a href="">Username</a></th>
-                                <th class="th-lg"><a href="">Username</a></th>
-                                <th class="th-lg"><a href="">Username</a></th>
-                            </tr>
-                        </thead>
-                        <!--Table head-->
-                        <!--Table body-->
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Paul</td>
-                                <td>Topolski</td>
-                                <td>@P_Topolski</td>
-                                <td>Paul</td>
-                                <td>Topolski</td>
-                                <td>@P_Topolski</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                        </tbody>
-                        <!--Table body-->
-                    </table>
-                    <!--Bottom Table UI-->
-                    <div class="d-flex justify-content-center">
-                        <!--Pagination -->
-                        <nav class="my-4 pt-2">
-                            <ul class="pagination pagination-circle pg-blue mb-0">
-                                <!--First-->
-                                <li class="page-item disabled clearfix d-none d-md-block"><a class="page-link">First</a></li>
-                                <!--Arrow left-->
-                                <li class="page-item disabled">
-                                    <a class="page-link" aria-label="Previous">
-                                            <span aria-hidden="true">&laquo;</span>
-                                            <span class="sr-only">Previous</span>
-                                        </a>
-                                </li>
-                                <!--Numbers-->
-                                <li class="page-item active"><a class="page-link">1</a></li>
-                                <li class="page-item"><a class="page-link">2</a></li>
-                                <li class="page-item"><a class="page-link">3</a></li>
-                                <li class="page-item"><a class="page-link">4</a></li>
-                                <li class="page-item"><a class="page-link">5</a></li>
-                                <!--Arrow right-->
-                                <li class="page-item">
-                                    <a class="page-link" aria-label="Next">
-                                            <span aria-hidden="true">&raquo;</span>
-                                            <span class="sr-only">Next</span>
-                                        </a>
-                                </li>
-                                <!--First-->
-                                <li class="page-item clearfix d-none d-md-block"><a class="page-link">Last</a></li>
-                            </ul>
-                        </nav>
-                        <!--/Pagination -->
-                    </div>
-                    <!--Bottom Table UI-->
-                </div>
-            </div>
-          
-            <hr class="my-4">
-          
-            <div class="text-center darken-grey-text mb-4">
-                <h3 class="font-bold mb-3">Here you can find more Tables:</h3>
-                <a class="btn btn-danger" href="https://mdbootstrap.com/content/tables/" target="_blank">Bootstrap Tables</a>
+        <div class="container-fluid">
+            <div class="starter-template">
+                <h1 class="text-center">Listado de Pacientes</h1>
+                <p class="lead">
+                    En esta página usted puede visualizar el listado de los pacientes.
+                </p>
             </div>
 
+            <div class="table-responsive">
+                <table class="table table-striped dataTable" id="miTabla">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>DNI</th>
+                            <th>Fecha de Nacimiento</th>
+                            <th>Email</th>
+                            <th>Teléfono</th>
+                            <th>Localidad</th>
+                            <th>Provincia</th>
+                            <th>Dirección</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td>Juan</td>
+                                <td>Pérez</td>
+                                <td>412341234</td>
+                                <td>1990-11-11</td>
+                                <td>juan@test.com</td>
+                                <td>41414242</td>
+                                <td>San Fernando</td>
+                                <td>Buenos Aires</td>
+                                <td>Perón 1990</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <button class="btn btn-warning btn-sm me-2">Modificar</button>
+                                        <button class="btn btn-danger btn-sm">Eliminar</button>
+                                    </div>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <!--MDB Tables-->
     </main>
     <footer class="admin__footer">
         <span>&copy; 2018 Company Inc.</span>
         <span><a href="#1" class="help">Ask for help</a></span>
     </footer>
 </div>
-<script src="${pageContext.request.contextPath}/resources/js/script.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#miTabla').DataTable({
+            language: {
+                url: '//cdn.datatables.net/plug-ins/1.13.5/i18n/es-ES.json'
+            },
+            searching: true,
+            paging: true
+        });
+    });
+</script>
 </body>
 </html>
