@@ -34,4 +34,24 @@ public class PacienteController {
 		return mv;
 		
 	}
+    
+    @RequestMapping("modificarPaciente.html")
+	public ModelAndView viewModificacionPaciente() {
+		
+		ModelAndView mv = new ModelAndView();
+		
+		mv.setViewName("paciente/modificacionPaciente");
+		return mv;
+		
+	}
+    
+    @RequestMapping("eliminarPaciente.html")
+   	public ModelAndView viewEliminacionPaciente() {
+   		
+   		ModelAndView mv = new ModelAndView();
+   		
+   		mv.setViewName("paciente/eliminacionPaciente");
+   		return mv;
+   		
+   	}
 }
